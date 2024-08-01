@@ -1,4 +1,4 @@
-Book-Scrabble - Tile Management System
+# Book-Scrabble - Tile Management System
 This part simulates a tile management system for a Scrabble-like word game, showcasing various software engineering principles and practices.
 
 Features
