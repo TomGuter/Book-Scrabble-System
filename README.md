@@ -5,7 +5,7 @@ This part simulates a tile management system for a Scrabble-like word game, show
 
 Features:
 - **Immutable Tiles**: Demonstrates the use of immutability in class design, ensuring that tile states remain consistent throughout the game. 
-- **Singleton Bag:** **Employs the Singleton design pattern for managing the central tile repository, ensuring global access while preventing multiple instantiations. Random and Specific Tile Retrieval: Illustrates the use of algorithms to manage and manipulate data structures effectively. Tile Return Mechanism: Implements functionality to return tiles to the bag, showcasing the practical use of data structure manipulation. Software Engineering Experience
+- **Singleton Bag:** Used the Singleton design pattern for managing the central tile repository, ensuring global access while preventing multiple instantiations. Random and Specific Tile Retrieval: Illustrates the use of algorithms to manage and manipulate data structures effectively. Tile Return Mechanism: Implements functionality to return tiles to the bag, showcasing the practical use of data structure manipulation. Software Engineering Experience
 
 
 ## Class: BloomFilter
