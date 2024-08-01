@@ -64,7 +64,7 @@ Description:
 
 Methods:
 **add(String word): Adds a word to the tracking structure.**
-- **remove(): ** Selects and returns a word to be removed based on the policy.
+- **remove():** Selects and returns a word to be removed based on the policy.
 Implementations of CacheReplacementPolicy:
 - **LRU (Least Recently Used):** Evicts the least recently used item.
 - **LFU (Least Frequently Used):** Evicts the least frequently used item.
