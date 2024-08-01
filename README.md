@@ -70,7 +70,7 @@ Implementations of CacheReplacementPolicy:
 - **LFU (Least Frequently Used):** Evicts the least frequently used item.
 
 ## 
-his project uses design patterns like Strategy for varying cache replacement policies and encapsulates file reading operations to ensure scalability and efficiency.
+this project uses design patterns like Strategy for varying cache replacement policies and encapsulates file reading operations to ensure scalability and efficiency.
 
 
 Software engineering Elements & Best Practices:
