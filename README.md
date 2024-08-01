@@ -3,11 +3,12 @@
 ## Tile Management 
 This part simulates a tile management system for a Scrabble-like word game, showcasing various software engineering principles and practices.
 
-Features
-**Immutable Tiles: **Demonstrates the use of immutability in class design, ensuring that tile states remain consistent throughout the game. **Singleton Bag: **Employs the Singleton design pattern for managing the central tile repository, ensuring global access while preventing multiple instantiations. Random and Specific Tile Retrieval: Illustrates the use of algorithms to manage and manipulate data structures effectively. Tile Return Mechanism: Implements functionality to return tiles to the bag, showcasing the practical use of data structure manipulation. Software Engineering Experience
+Features:
+**Immutable Tiles**: Demonstrates the use of immutability in class design, ensuring that tile states remain consistent throughout the game. 
+**Singleton Bag:** **Employs the Singleton design pattern for managing the central tile repository, ensuring global access while preventing multiple instantiations. Random and Specific Tile Retrieval: Illustrates the use of algorithms to manage and manipulate data structures effectively. Tile Return Mechanism: Implements functionality to return tiles to the bag, showcasing the practical use of data structure manipulation. Software Engineering Experience
 
 
-Class: BloomFilter
+## Class: BloomFilter
 Description:
 The BloomFilter class manages a probabilistic data structure which is very space-efficient and is used for testing whether an element is a member of a set.
 
@@ -38,27 +39,28 @@ Description:
 Integrates all components, managing word existence queries across cached and persistent storage.
 
 Attributes:
-existingWordsCache: A CacheManager for words that exist.
-nonExistingWordsCache: A CacheManager for words that do not exist.
-bloomFilter: A BloomFilter to quickly check the probable presence of a word.
-fileNames: An array of file names to load words from.
+**existingWordsCache:** A CacheManager for words that exist.
+**nonExistingWordsCache:** A CacheManager for words that do not exist.
+**bloomFilter:** A BloomFilter to quickly check the probable presence of a word.
+**fileNames:** An array of file names to load words from.
+
 Methods:
-Constructor: Initializes caches and the bloom filter, and loads words.
-loadWordsIntoBloomFilter(): Loads words from files into the Bloom filter.
-query(String word): Checks for the presence of a word using caches and the Bloom filter.
-challenge(String word): Force a definitive search for a word across files, updating caches accordingly.
-Class: IOSearcher
+**Constructor:** Initializes caches and the bloom filter, and loads words.
+**query(String word):** Checks for the presence of a word using caches and the Bloom filter.
+**challenge(String word):** Force a definitive search for a word across files, updating caches accordingly.
+
+## Class: IOSearcher
 Description:
 Performs direct file I/O to find words in stored documents.
 
 Methods:
-search(String word, String... fileNames): Searches for a word across multiple files, returning true if found.
-Interface: CacheReplacementPolicy
+**search(String word, String... fileNames):** Searches for a word across multiple files, returning true if found.
+**Interface: CacheReplacementPolicy**
 Description:
-Defines methods for cache replacement strategies.
+**Defines methods for cache replacement strategies.**
 
 Methods:
-add(String word): Adds a word to the tracking structure.
+**add(String word): Adds a word to the tracking structure.**
 remove(): Selects and returns a word to be removed based on the policy.
 Implementations of CacheReplacementPolicy:
 LRU (Least Recently Used): Evicts the least recently used item.
