@@ -2,7 +2,7 @@
 A comprehensive Scrabble game in Java, incorporating advanced software engineering principles and design patterns. The project features:
 
 Main Features:
-- Tile Management: Simulates a tile management system with immutable tiles for consistency, a Singleton pattern for managing the tile repository, and algorithms for random and specific tile retrieval.
+- Tile Management: Simulates a tile management system with immutable tiles for consistency, a design patterns for managing the tile repository, and algorithms for random and specific tile retrieval.
 - Server Management: Ensures server stability and manages client connections effectively.
 - Dictionary Integration: Utilizes a Bloom Filter for efficient real-time word validation and a CacheManager for optimized data access.
 - Software Engineering Practices: Demonstrates modular OOP design, encapsulates file reading operations, and uses design patterns like Strategy for cache replacement policies.
